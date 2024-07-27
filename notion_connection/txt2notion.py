@@ -30,6 +30,7 @@ class Txt2Notion:
 
     def write_to_notion(self, start_line=0, frequency=30):
         lines = self.txt_loader.get_lines()
+        print(lines)
         start_time = time.time()
         lines_written = 0
         for index, line in enumerate(lines):
